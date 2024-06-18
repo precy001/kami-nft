@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'roboto slab', sans-serif;
+    background-color: #c8c6c6;
+}
+
+.top{
+    padding: 5rem 20rem;
+}
+
+.img{
+    border-radius: 75rem;
+    border: 2.5px solid #800020;
+    animation: rotate 5s infinite ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.header-title{
+    text-align: center;
+    padding-top:2.5rem;
+    font-size: 1.7rem;
+    color: #800020;
+    white-space: nowrap;
+}
+
+.name{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #800020;
+    transition: .5s ease-in-out;
+    animation: scale 2s 1s infinite ease;
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+.main{
+    margin-top: 1.5rem;
+    border: 3px solid #800020;
+    border-radius: 1rem;
+    width: 444px;
+    height: 444px;
+}
+
+.note{
+    text-align: center;
+    padding: 2rem;
+}
+
+.buy-btn{
+    padding: .5rem 3rem;
+    text-decoration: none;
+    color: #c8c6c6;
+    background-color: #800020;
+    font-size: 2rem;
+    margin: 1rem;
+    border-radius: 3rem;
+    border: 3px solid white;
+}
+
+.buy{
+    transition: .5s ease-in-out;
+}
+
+.buy:hover{
+    transform: scale(0.8);
+}
+
+.social-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:3rem 1.5rem;
+}
+
+.social-container img{
+    transition: .5s ease-in-out;
+}
+
+.social-container img:hover{
+    transform: scale(0.8);
+}
+
+.meme-top{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #800020;
+    transition: .5s ease-in-out;
+}
+
+.container{
+    padding: 2rem;
+}
+
+.each-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.5rem;
+}
+
+.flex-img{
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #800020;
+}
+
+.footer{
+    text-align: center;
+    font-size: .8rem;
+}
+
+@media all and (max-width:790px){
+    .top{
+        padding: 0;
+        padding-top: 2.5rem;
+    }
+}
+
+@media all and (max-width:473px){
+    .main{
+        width: 350px;
+        height: 350px;
+    }
+
+    .meme-top{
+        font-size: 2rem;
+    }
+}
+
+@media all and (max-width:767px){
+    .each-container{
+        flex-wrap: wrap;
+    }
+}
