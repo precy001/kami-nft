@@ -194,7 +194,7 @@ body{
 
 @media all and (max-width:478px){
     .tax{
-        gap: 4rem;
+        gap: 1rem;
     }
 }
 
