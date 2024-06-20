@@ -196,5 +196,10 @@ body{
     .tax{
         gap: 1rem;
     }
+
+    .img-stable{
+        width: 130px;
+        height: 130px;
+    }
 }
 
