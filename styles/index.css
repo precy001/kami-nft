@@ -78,7 +78,7 @@ body{
     height: 400px;
     margin: 2rem;
     transition: .5s ease-in-out; 
-    animation: rotateScale 2s infinite ease-in-out;
+    animation: rotateScale 5s infinite ease-in-out;
     cursor: pointer; 
 }
 
