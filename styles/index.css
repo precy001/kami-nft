@@ -5,8 +5,10 @@
 }
 
 body{
-    font-family: 'roboto slab', sans-serif;
-    background-color: #c8c6c6;
+    font-family: 'comic neue', serif;
+    font-weight: 700;
+    background-color: #8f986d;
+    overflow-x: hidden;
 }
 
 .top{
@@ -17,6 +19,13 @@ body{
     border-radius: 75rem;
     border: 2.5px solid #800020;
     animation: rotate 5s infinite ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.img-stable{
+    border-radius: 75rem;
+    border: 2.5px solid #800020;
     transition: .5s ease-in-out;
     cursor: pointer;
 }
@@ -42,7 +51,7 @@ body{
 .name{
     text-align: center;
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: 700;
     color: #800020;
     transition: .5s ease-in-out;
     animation: scale 2s 1s infinite ease;
@@ -64,7 +73,6 @@ body{
 
 .main{
     margin-top: 1.5rem;
-    border: 3px solid #800020;
     border-radius: 1rem;
     width: 444px;
     height: 444px;
@@ -112,7 +120,7 @@ body{
 .meme-top{
     text-align: center;
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: 600;
     color: #800020;
     transition: .5s ease-in-out;
 }
@@ -140,6 +148,26 @@ body{
     font-size: .8rem;
 }
 
+.token{
+    color: #800020;
+    font-size: 3.5rem;
+}
+
+.tax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    padding: 3rem;
+}
+
+.note-under-tax{
+    color: #800020;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 @media all and (max-width:790px){
     .top{
         padding: 0;
@@ -163,3 +191,10 @@ body{
         flex-wrap: wrap;
     }
 }
+
+@media all and (max-width:478px){
+    .tax{
+        gap: 4rem;
+    }
+}
+
